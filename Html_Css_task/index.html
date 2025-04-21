@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stylish HTML Tags Demo</title>
+
+  <!-- Internal CSS for styling -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      color: #333;
+    }
+
+    header, footer {
+      background: linear-gradient(to right, #007acc, #0097a7);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .content {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 10px;
+      color: #006064;
+    }
+
+    p, a, input, table, iframe {
+      margin-top: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #004d40;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: linear-gradient(to right, #66bb6a, #43a047);
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to right, #388e3c, #2e7d32);
+    }
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    input {
+      padding: 10px;
+      width: 250px;
+      border-radius: 5px;
+      border: 1px solid #999;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #0097a7;
+      color: white;
+    }
+
+    iframe {
+      margin-top: 20px;
+      width: 100%;
+      height: 350px;
+      border: 2px solid #0097a7;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    /* Utility classes */
+    .italic {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with <h1> -->
+  <header>
+    <h1>Stylish Web Page Using HTML Tags</h1>
+    <p class="italic">A simple demonstration of all basic HTML elements</p>
+  </header>
+
+  <!-- Content inside a <div> -->
+  <div class="content">
+
+    <!-- Headings and Paragraph -->
+    <h2>Introduction</h2>
+    <p>This page showcases various HTML elements such as <i>&lt;a&gt;, &lt;button&gt;, &lt;table&gt;, &lt;img&gt;, &lt;iframe&gt;</i>, and more—all styled with internal CSS.</p>
+
+    <!-- Sub-headings from h3 to h6 -->
+    <h3>Heading Level 3</h3>
+    <h4>Heading Level 4</h4>
+    <h5>Heading Level 5</h5>
+    <h6>Heading Level 6</h6>
+
+    <!-- Hyperlink using <a> -->
+    <a href="https://www.w3schools.com" target="_blank">Visit W3Schools for HTML Tutorials</a>
+
+    <!-- Button using <button> -->
+    <br/>
+    <button class="btn" onclick="alert('You clicked the button!')">Click Me!</button>
+
+    <!-- Image using <img> -->
+    <h3>Sample Image</h3>
+    <img src="https://via.placeholder.com/400x250.png?text=Sample+Image" alt="Placeholder"/>
+
+    <!-- Input using <input> -->
+    <h3>Subscribe to Newsletter</h3>
+    <input type="email" placeholder="Enter your email" />
+
+    <!-- Table using <table> -->
+    <h3>Team Members</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>Developer</td>
+          <td>USA</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>Designer</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Charlie</td>
+          <td>Manager</td>
+          <td>India</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Iframe using <iframe> -->
+    <h3>Embedded Site</h3>
+    <iframe src="https://www.wikipedia.org"></iframe>
+
+  </div>
+
+  <!-- Footer using <div> -->
+  <footer>
+    <div>&copy; 2025 Stylish Web Page | Built with ❤️ and HTML</div>
+  </footer>
+
+</body>
+</html>
