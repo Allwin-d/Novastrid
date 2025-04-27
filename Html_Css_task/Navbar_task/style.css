@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  position: sticky; /* Sticky positioning to keep navbar fixed at the top during scrolling */
+  top: 0; /* Set navbar to stick to the top of the viewport */
+  z-index: 100; /* Ensure navbar stays above other content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for visual separation */
+}
+
+header .logo {
+  width: 120px;
+  height: auto;
+}
+
+.navlink {
+  display: flex;
+  gap: 20px;
+}
+
+.navlink a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navlink a:hover {
+  color: #ff6f61;
+}
+
+.search-container {
+  position: relative; /* Relative positioning to position the search icon within the container */
+  width: 250px;
+}
+
+.searchbar {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.searchbar:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Shadow effect when the search input is focused */
+}
+
+.search-icon {
+  position: absolute; /* Absolute positioning to place the icon inside the search bar */
+  top: 50%; /* Vertically center the icon */
+  right: 10px; /* Align the icon to the right */
+  transform: translateY(-50%); /* Adjust to ensure exact vertical centering */
+  width: 20px;
+  height: 20px;
+  pointer-events: none; /* Prevent the icon from interfering with input interaction */
+}
+
+.body-video {
+  width: 100vw;
+  height: 100vh;
+  position: relative; /* Relative positioning to manage stacking context */
+  overflow: hidden; /* Hide anything that overflows the body video area */
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for video */
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    width: 200px;
+  }
+
+  .navlink {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navlink a {
+    font-size: 16px;
+  }
+}
