@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+  background-color: rgb(185, 61, 187);
+  width: full;
+  text-align: center;
+  padding: 15px;
+  color: white;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.nav-image {
+  width: 180px;
+  height: 140px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  margin-left: 60px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+.paragraph {
+  padding: 30px;
+  color: gray;
+}
+.image-and-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  background-color: gainsboro;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.sales-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid #333;
+  margin: 0 auto;
+}
+
+.sales-table th,
+.sales-table td {
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+.sales-table thead th {
+  background-color: #150ef5;
+  color:white;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
