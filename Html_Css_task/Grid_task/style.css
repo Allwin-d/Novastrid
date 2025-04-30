@@ -1,0 +1,83 @@
+/* Apply box-sizing border-box to all elements for consistent sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Reset default margins and paddings; set full height */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Main container using CSS Grid layout with 3 vertical sections (rows) */
+.container {
+  display: grid;
+  grid-template-rows: 3fr 3fr 4fr; /* First two sections: 3 parts each, last section: 4 parts */
+  height: 100vh;
+}
+
+/* Common style for all sections with grid display and spacing */
+.section {
+  display: grid;
+  padding: 4px;
+  gap: 2px; /* Small gap between grid items */
+}
+
+/* Section 1 and Section 2 are both 25-column x 3-row grids */
+.section1,
+.section2 {
+  grid-template-columns: repeat(25, 1fr); /* 25 equal-width columns */
+  grid-template-rows: repeat(3, 1fr); /* 3 equal-height rows */
+  background: #dbeeff; /* Light blue background */
+}
+
+/* Section 3 has two columns: left and right, with custom fractional widths */
+.section3 {
+  grid-template-columns: 1.5fr 2.5fr; /* Left column: 1.5 parts, Right column: 2.5 parts */
+  background: #dbeeff;
+}
+
+/* Left section (column) styling */
+.left {
+  background: rgb(234, 127, 141);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
+}
+
+/* Right section (column) of section3 has 2 rows (top and bottom) */
+.right {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* 2 equal-height rows */
+}
+
+/* Top part inside .right column */
+.top {
+  background: #fce5b2;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+}
+
+/* Styling for each box (numbered square) */
+.box {
+  background: #27abc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-weight: bold;
+}
+
+/* Bottom grid layout: 5 columns with spacing for 2 rows of boxes (1–5 and 6–10) */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+  gap: 16px; /* Space between each box */
+  padding: 16px;
+}
