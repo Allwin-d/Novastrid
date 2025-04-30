@@ -31,6 +31,7 @@ html {
   grid-template-columns: repeat(25, 1fr); /* 25 equal-width columns */
   grid-template-rows: repeat(3, 1fr); /* 3 equal-height rows */
   background: #dbeeff; /* Light blue background */
+  border: 2px solid black;
 }
 
 /* Section 3 has two columns: left and right, with custom fractional widths */
