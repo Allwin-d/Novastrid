@@ -1,0 +1,58 @@
+/* Main card style */
+.custom-card {
+    border-left: 6px solid #5bc0de;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  /* Base badge style */
+  .badge-custom {
+    margin-left: 10px;
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Blue badge - Live In Office */
+  .badge-office {
+    background-color: #e7f3ff;
+    color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  /* Hover effect for Live In Office */
+  .badge-office:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Yellow badge - Awaiting TLL Approval */
+  .badge-approval {
+    background-color: #fff7e6;
+    color: #d4a017;
+    border: 1px solid #d4a017;
+  }
+  
+  /* Hover effect for Awaiting TLL Approval */
+  .badge-approval:hover {
+    background-color: #d4a017;
+    color: #fff;
+  }
+  
+  /* Time Zone Review button */
+  .btn-timezone {
+    background-color: #499d9c;
+    color: #fff;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for Time Zone Review */
+  .btn-timezone:hover {
+    background-color: #3e8887;
+    transform: scale(1.03);
+  }
+  
