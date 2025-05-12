@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TechSolutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Product Details Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productModalLabel">Service Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4 id="modalTitle"></h4>
+        <p id="modalDesc"></p>
+        <hr>
+        <p id="modalExtra" class="text-muted"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#">TechSolutions</a>
+  <div class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="#mainCarousel">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn search-btn" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Carousel -->
+<div id="mainCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#mainCarousel" data-slide-to="1"></li>
+    <li data-target="#mainCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h2>Innovative Tech Solutions</h2>
+      <p>Bringing cutting-edge technology to help your business thrive in the digital age.</p>
+      <a class="btn carousel-btn" href="#services">Explore Services</a>
+    </div>
+    <div class="carousel-item">
+      <h2>Expert Team</h2>
+      <p>Our professionals bring years of industry experience to solve your most complex challenges.</p>
+      <a class="btn carousel-btn" href="#team">Meet Our Team</a>
+    </div>
+    <div class="carousel-item">
+      <h2>Client Success</h2>
+      <p>We measure our success by the achievements of our clients and partners.</p>
+      <a class="btn carousel-btn" href="#testimonials">Read Stories</a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+<!-- Services Section -->
+<div id="services" class="container my-5">
+  <h3 class="section-title mb-4">Our Solutions</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-img-top">Custom Software</div>
+        <div class="card-body">
+          <h5 class="card-title">Enterprise Solutions</h5>
+          <p class="card-text">Tailored software development to optimize your business processes and increase efficiency.</p>
+          <a class="btn btn-sm primary-btn mr-2 view-btn" data-toggle="modal" data-target="#productModal" data-service="software">View</a>
+          <a class="btn btn-sm secondary-btn">Details</a>
+          <span class="time-badge">12 min</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-img-top">Data Analytics</div>
+        <div class="card-body">
+          <h5 class="card-title">Business Intelligence</h5>
+          <p class="card-text">Transform your data into actionable insights with our advanced analytics solutions.</p>
+          <a class="btn btn-sm primary-btn mr-2 view-btn" data-toggle="modal" data-target="#productModal" data-service="analytics">View</a>
+          <a class="btn btn-sm secondary-btn">Details</a>
+          <span class="time-badge">8 min</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <div class="card-img-top">Cybersecurity</div>
+        <div class="card-body">
+          <h5 class="card-title">Security Services</h5>
+          <p class="card-text">Protect your digital assets with our comprehensive security solutions and monitoring.</p>
+          <a class="btn btn-sm primary-btn mr-2 view-btn" data-toggle="modal" data-target="#productModal" data-service="security">View</a>
+          <a class="btn btn-sm secondary-btn">Details</a>
+          <span class="time-badge">10 min</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services Accordion -->
+<div class="container mb-5">
+  <h3 class="section-title mb-3">Additional Services</h3>
+  <div class="accordion" id="serviceAccordion">
+    
+    <!-- Cloud Infrastructure -->
+    <div class="card accordion-card mb-2">
+      <div class="card-header p-0">
+        <h2 class="mb-0">
+          <button class="btn btn-block text-left accordion-btn px-3 py-2" type="button" data-toggle="collapse" data-target="#serviceOne" aria-expanded="true">
+            Cloud Infrastructure
+            <span class="accordion-icon"></span>
+          </button>
+        </h2>
+      </div>
+      <div id="serviceOne" class="collapse" data-parent="#serviceAccordion">
+        <div class="card-body accordion-body">
+          <strong>Cloud Infrastructure:</strong> We provide scalable cloud solutions that reduce costs while improving performance and reliability. Our team specializes in multi-cloud strategies, migration services, and cloud-native application development to ensure you get the most value from your infrastructure investment. We help businesses of all sizes harness the power of cloud computing with minimal disruption.
+        </div>
+      </div>
+    </div>
+
+    <!-- AI & Machine Learning -->
+    <div class="card accordion-card mb-2">
+      <div class="card-header p-0">
+        <h2 class="mb-0">
+          <button class="btn btn-block text-left accordion-btn px-3 py-2 collapsed" type="button" data-toggle="collapse" data-target="#serviceTwo" aria-expanded="false">
+            AI & Machine Learning
+            <span class="accordion-icon"></span>
+          </button>
+        </h2>
+      </div>
+      <div id="serviceTwo" class="collapse" data-parent="#serviceAccordion">
+        <div class="card-body accordion-body">
+          <strong>AI & Machine Learning:</strong> Our AI solutions help businesses automate processes, gain intelligent insights, and create new opportunities. From natural language processing to predictive analytics, we implement practical AI applications that deliver real business value. Our experts work closely with your team to identify the right AI strategy and deployment approach for your specific needs and objectives.
+        </div>
+      </div>
+    </div>
+
+    <!-- Digital Transformation -->
+    <div class="card accordion-card mb-2">
+      <div class="card-header p-0">
+        <h2 class="mb-0">
+          <button class="btn btn-block text-left accordion-btn px-3 py-2 collapsed" type="button" data-toggle="collapse" data-target="#serviceThree" aria-expanded="false">
+            Digital Transformation
+            <span class="accordion-icon"></span>
+          </button>
+        </h2>
+      </div>
+      <div id="serviceThree" class="collapse" data-parent="#serviceAccordion">
+        <div class="card-body accordion-body">
+          <strong>Digital Transformation:</strong> We guide organizations through comprehensive digital transformations that modernize operations and create new business models. Our approach combines technology implementation with strategic change management to ensure successful adoption. From legacy system modernization to implementing IoT solutions, we help you navigate the complexities of digital evolution.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <div class="d-flex flex-row">
+      &copy; 2024-2025
+      <div class="ml-3">
+        <strong>TechSolutions Inc.</strong>
+      </div>
+      <div class="ml-3">
+        <a href="#" class="footer-link">Privacy Policy</a>
+      </div>
+    </div>
+    <div>
+      <a href="#mainCarousel" class="footer-link">Back to Top</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Minimal JavaScript for the modal functionality
+  $(document).ready(function() {
+    $('.view-btn').click(function() {
+      const service = $(this).data('service');
+      let title, desc, extra;
+      
+      if (service === 'software') {
+        title = "Enterprise Software Solutions";
+        desc = "Custom software development tailored to your specific business requirements and industry challenges.";
+        extra = "From planning to deployment and ongoing maintenance, we provide end-to-end support.";
+      } else if (service === 'analytics') {
+        title = "Data Analytics & Business Intelligence";
+        desc = "Advanced analytics solutions that transform raw data into strategic insights and visualizations.";
+        extra = "Our analytics platforms integrate with your existing systems for seamless data flow.";
+      } else if (service === 'security') {
+        title = "Comprehensive Cybersecurity";
+        desc = "Protect your organization with our multi-layered security approach and continuous monitoring.";
+        extra = "Includes vulnerability assessments, threat detection, and incident response planning.";
+      }
+      
+      $('#modalTitle').text(title);
+      $('#modalDesc').text(desc);
+      $('#modalExtra').text(extra);
+    });
+  });
+</script>
+
+</body>
+</html>
