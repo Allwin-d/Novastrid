@@ -121,6 +121,12 @@ body {
   font-weight: 600;
 }
 
+/* Button group styling */
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
 .primary-btn {
   background-color: var(--secondary-color);
   color: white;
