@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Document title -->
+    <title>Login Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
+  <div class="flex flex-row w-screen h-screen">
+      <!-- Left half with image -->
+      <div class="w-1/2 h-full bg-gray-100 flex items-center justify-center">
+        <img src="./Images/left.svg" alt="Left-image" class="w-3/4" />
+      </div>
+      <!-- Right half with login form -->
+      <div class="flex flex-col justify-center items-center  float-right ml-52 ">
+        <div class="flex flex-col space-y-6 ">
+          <!-- Logo -->
+          <img src="./Images/rd-logo.svg" alt="logo" class="ml-10"></img>
+          <!-- Email label -->
+          <p class="">
+            Email<span class="text-red-600 ml-1">*</span>
+          </p>
+          <!-- Email input with icon -->
+          <div class="relative w-full">
+            <input
+              type="email"
+              class="border-gray-400 p-2 font-mono border-2 w-80 pl-8 rounded-md"
+            />
+            <i class="fa-regular fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+          </div>
+          <!-- Password label -->
+          <p class="">
+            Password<span class="text-red-600 ml-1">*</span>
+          </p>
+          <!-- Password input with lock and eye icons -->
+          <div class="relative w-full">
+            <input
+              type="password"
+              class="border-gray-400 rounded-md p-2 font-mono border-2 w-80 pl-8"
+            />
+            <i class="fa-solid fa-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500"></i>
+            <i class="fa-solid fa-eye-slash  absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 cursor-pointer"></i>
+          </div>
+          <!-- Login button -->
+          <button class="bg-blue-600 p-2 rounded-lg text-xl text-white font-mono hover:bg-blue-700 ">
+            LOG IN
+            <span>
+             <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </button>
+          <!-- Forgot password link -->
+          <a href="" class="text-center">
+            Forgot Password ?
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

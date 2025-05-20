@@ -78,3 +78,8 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+
+ul{
+  list-style-position: inside;
+  list-style-type:circle;
+}
